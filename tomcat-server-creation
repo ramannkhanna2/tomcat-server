@@ -1,11 +1,11 @@
-EC2 instance with Java 11
+take centos 7 :
 Install Apache Tomcat
-Download tomcat packages from https://tomcat.apache.org/download-80.cgi onto /opt on EC2 instance
+Download tomcat packages from https://tomcat.apache.org/download-90.cgi  onto /opt on EC2 instance
 Note: Make sure you change <version> with the tomcat version which you download.
 
 # Create tomcat directory
 cd /opt
-https://downloads.apache.org/tomcat/tomcat-9/v9.0.65/bin/apache-tomcat-9.0.65.tar.gz.sha512
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.65/bin/apache-tomcat-9.0.65.tar.gz
 tar -xvzf /opt/apache-tomcat-<version>.tar.gz
 yum install java -y
 give executing permissions to startup.sh and shutdown.sh which are under bin.
